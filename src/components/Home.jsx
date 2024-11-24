@@ -31,6 +31,7 @@ function Home() {
         setFilterProducts(products.filter((p) => p.category == qCategory ))
     }
    },[qCategory, products])
+   
 
   return ( products ? 
   <> 
@@ -51,7 +52,8 @@ function Home() {
             )})}
       </div> 
   </> 
-  : <Loading />);
+  : <Loading />); 
+            
 }
 
 export default Home
